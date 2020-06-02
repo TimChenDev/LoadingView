@@ -48,7 +48,7 @@ loadingView.listener = object : LoadingView.OnLoadingViewListener {
 }
 ```
 
-### call startLoading function
+### Call startLoading function
 
 call startLoading() before you start some data request
 
@@ -57,7 +57,7 @@ loadingView.startLoading()
 presenter.loadData() // or viewModel.loadData()
 ```
 
-### call finishLoading function
+### Call finishLoading function
 
 call finishLoading() when you finishing the work, and give it a result to let loadingView decide which view should be shown
 
@@ -67,6 +67,19 @@ loadingView.finishLoading(true)
 
 // false will show error message and show reload button
 loadingView.finishLoading(false)
+```
+
+### Custom text and ui color
+
+```xml
+<com.timchentw.loadingview.LoadingView
+    android:id="@+id/loading_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:error_text="目前無法取得資料\n請確認網路狀態後再重新整理"
+    app:loading_text="@string/loading"
+    app:progress_color="#998800"
+    app:refresh_tint="@color/colorPrimary" />
 ```
 
 ## LICENSE

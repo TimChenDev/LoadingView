@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -16,6 +17,9 @@
     <com.timchentw.loadingview.LoadingView
         android:id="@+id/loadingView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        app:error_text="@string/hint_no_data_please_check_later"
+        app:progress_color="#998800"
+        app:refresh_tint="@color/colorPrimary"/>
 
 </LinearLayout>

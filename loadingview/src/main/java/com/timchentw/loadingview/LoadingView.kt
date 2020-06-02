@@ -47,13 +47,13 @@ class LoadingView : LinearLayoutCompat {
 
     private fun init(attrs: AttributeSet?) {
 
-        val attributes = context.theme.obtainStyledAttributes(attrs, R.styleable.LoadingView, 0, 0)
+        val attributes = context.theme.obtainStyledAttributes(attrs, R.styleable.loading_view, 0, 0)
         try{
             // load attributes
-            progressColor = attributes.getColor(R.styleable.LoadingView_progressColor, DEFAULT_PROGRESS_COLOR)
-            refreshTint = attributes.getColor(R.styleable.LoadingView_refreshTint, DEFAULT_REFRESH_TINT)
-            errorText = attributes.getString(R.styleable.LoadingView_errorText)
-            loadingText = attributes.getString(R.styleable.LoadingView_loadingText)
+            progressColor = attributes.getColor(R.styleable.loading_view_progress_color, DEFAULT_PROGRESS_COLOR)
+            refreshTint = attributes.getColor(R.styleable.loading_view_refresh_tint, DEFAULT_REFRESH_TINT)
+            errorText = attributes.getString(R.styleable.loading_view_error_text)
+            loadingText = attributes.getString(R.styleable.loading_view_loading_text)
         } finally {
             attributes.recycle()
         }

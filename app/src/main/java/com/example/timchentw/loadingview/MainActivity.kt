@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity(), LoadingView.OnLoadingViewListener {
     }
 
     private fun startTimer() {
-        disposable = Observable.timer(5000, TimeUnit.MILLISECONDS)
+        disposable = Observable.timer(2000, TimeUnit.MILLISECONDS)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe {
                 // do something data received
