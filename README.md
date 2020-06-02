@@ -17,12 +17,8 @@ dependencies {
 
 ## Preview
 
-<img src="https://i.imgur.com/3HbyiUs.png"
-    alt="drawing"
-    style="width:200px;"/>
-<img src="https://imgur.com/NLpGYpn.png"
-    alt="drawing"
-    style="width:200px;"/>
+![loading](art/loading.png)
+![load_error](art/load_error.png)
 
 ## How to use
 
