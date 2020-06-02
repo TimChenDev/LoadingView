@@ -15,6 +15,15 @@ dependencies {
 }
 ```
 
+## Preview
+
+<img src="https://i.imgur.com/3HbyiUs.png"
+    alt="drawing"
+    style="width:200px;"/>
+<img src="https://imgur.com/NLpGYpn.png"
+    alt="drawing"
+    style="width:200px;"/>
+
 ## How to use
 
 ### Initial LoadingView
