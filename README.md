@@ -5,11 +5,13 @@
 這是一個載入資料提示的範例, 具備重新載入的介面</br>
 LoadingView Demo, with reload button
 
-## Installation
-
-Adding the following dependency to your build.gradle file:
+## Gradle Setup
 
 ``` gradle
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
 dependencies {
     implementation 'com.github.TimChenDev:LoadingView:1.1.1'
 }
